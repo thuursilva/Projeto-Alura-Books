@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="Styles/style.css">
 </head>
 
@@ -49,7 +50,123 @@
         <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel_titulo">Últimos lançamentos</h2>
+        <!--Utilizando Swiper.JS-->
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="Assets/Nodejs.svg" alt="Node.Js"></div>
+            <div class="swiper-slide"><img src="Assets/Gestão2.svg" alt="Gestão 2"></div>
+            <div class="swiper-slide"><img src="Assets/Tuning.svg" alt="Tuning SQL"></div>
+            <div class="swiper-slide"><img src="Assets/Javascript.svg" alt="Javascript"></div>
+            <div class="swiper-slide"><img src="Assets/UX.svg" alt="UX"></div>
+            </div>
     
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="card">
+            <div class="card_descricao">
+            <!-- Primeira linha-->
+                <div class="descricao">
+                <!--Primeira coluna-->
+                <h2 class="card_titulo">Talvez você também se interesse por...</h2>
+                <h3 class="card_subtitulo">Angular 11 e Firebase</h3>
+                <p class="card_texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!--Segunda coluna-->
+                <img src="Assets/Angular.svg" alt="Logo Angular">
+            </div>
+
+            <!--Segunda linha-->
+            <div class="card_botoes">
+                <!--Primeira coluna-->
+                <ul class="botoes">
+                    <li class="botoes_item"><img src="Assets/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes_item"><img src="Assets/Compras.svg" alt="Adicionar a sacola"></li>
+                </ul>
+                <!--Segunda coluna-->
+                <a href="#" class="botoes_ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel_titulo">Mais vendidos</h2>
+        <!--Utilizando Swiper.JS-->
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="Assets/Acessibilidade.svg" alt="Acessibilidade na Web"></div>
+            <div class="swiper-slide"><img src="Assets/Guia Front-end.svg" alt="Guia Front-end"></div>
+            <div class="swiper-slide"><img src="Assets/Liderança.svg" alt="Liderança em design"></div>
+            <div class="swiper-slide"><img src="Assets/Portugol.svg" alt="Programação em portugol"></div>
+            <div class="swiper-slide"><img src="Assets/Arquitetura.svg" alt="Arquitetura"></div>
+            </div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <div class="card_descricao">
+            <!-- Primeira linha-->
+                <div class="descricao">
+                <!--Primeira coluna-->
+                <img src="Assets/Star 5.svg" alt="Avaliação 5 estrelas">
+                <img src="Assets/Star 5.svg" alt="Avaliação 5 estrelas">
+                <img src="Assets/Star 5.svg" alt="Avaliação 5 estrelas">
+                <img src="Assets/Star 5.svg" alt="Avaliação 5 estrelas">
+                <img src="Assets/Star 5.svg" alt="Avaliação 5 estrelas">
+                <h2 class="card_titulo">Autor do mês</h2>
+                <h3 class="card_subtitulo">Arthur Fernando</h3>
+                <p class="card_texto">Analista de Suporte Jr., Arthur está estudando para se tornar um especialista em front-end</p>
+                </div>
+                <!--Segunda coluna-->
+                <img src="Assets/autor.jpeg" alt="Arthur Fernando">
+            </div>
+
+            <!--Segunda linha-->
+            <div class="card_botoes">
+                <!--Primeira coluna-->
+                <ul class="botoes">
+                    <li class="botoes_item"><img src="Assets/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes_item"><img src="Assets/Compras.svg" alt="Adicionar a sacola"></li>
+                </ul>
+                <!--Segunda coluna-->
+                <a href="#" class="botoes_ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- inicializando o carrosel e aplicando métodos-->
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+            },
+        });
+    </script>
+
 </body>
 
 </html>
