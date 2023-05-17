@@ -1,0 +1,33 @@
+.topicos{
+    background: var(--cor-degrade-azul);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topico_titulo{
+    color: var(--cor-branca);
+    font-family: var(--fonte-poppins);
+    font-weight: 300;
+    font-size: 1rem;   
+    margin-bottom: 1rem;
+}
+
+.topicos_lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topico_item{
+    margin: 2em 0.5em;
+}
+
+.topicos_links{
+    color: var(--cor-branca);
+    padding: 1em;
+    background-color: var(--cor-laranja);
+    text-decoration: none;
+    font-family: var(--fonte-poppins);
+    font-weight: 700;
+    font-size: 0.9em;
+}

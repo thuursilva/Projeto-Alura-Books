@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url("banner.css");
 @import url("carrosel.css");
+@import url("topico.css");
+@import url("contato.css");
+@import url("rodape.css");
 
 :root{
     --cor-cinza: #EBECEE;
