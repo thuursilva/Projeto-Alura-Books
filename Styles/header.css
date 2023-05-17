@@ -73,5 +73,76 @@
     text-decoration: none;
 }
 
+.header_titulo{
+    display: none;
+}
+
+.header_lista{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+    .header_titulo,
+    .header_titulo_negrito{
+        font-family: var(--fonte-josefin);
+        font-size: 1.8rem;
+    }
+
+    .header_titulo{
+        font-weight: 400;
+        display: block;
+    }
+
+    .header_titulo_negrito{
+        font-weight: 700;
+    }
+
+    .header_lista{
+        display: flex;
+    }
+
+    .header_items{
+        padding: 0 1em;
+        text-transform: uppercase;
+        font-family: var(--fonte-poppins);
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .items_links{
+        text-decoration: none;
+        color: var(--cor-preto);
+    }
+
+    .cabecalho_imagem_transparente{
+        display: none;
+    }
+
+    .cabecalho_imagem{
+        padding: 0 1.5em;
+    }
+
+    .cabecalho_container{
+        padding-right: 3em;
+    }
+
+    .cabecalho_menu_hamburguer{
+        display: none;
+    }
+
+    .cabecalho_logo{
+        padding-left: 3em;
+    }
+
+    .header_lista_botao:checked ~ .lista_menu{
+        display: block;
+        width: auto;
+    }
+
+    .header_lista_botao{
+        display: none;
+    }
+}
 
 

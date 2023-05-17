@@ -39,3 +39,26 @@
     background: url("../Assets/Email.svg") no-repeat;
     background-position: 1em;
 }
+
+@media screen and (min-width: 1024px){
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato_container{
+        width: 30%;
+        margin: 2em 1em;
+    }
+
+    .contato_email{
+        width: 30%;
+    }
+
+    .contato_titulo{
+        font-size: 1.5em
+    }
+
+
+}

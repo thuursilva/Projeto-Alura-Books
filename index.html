@@ -36,10 +36,39 @@
                 </li>
             </ul>
             <img src="Assets/Logo.svg" alt="Logo da AluraBooks" class="cabecalho_logo">
+            <h1 class="header_titulo"><b class="header_titulo_negrito">Alura</b>Books</h1>
         </div>
 
+        <ul class="header_lista">
+            <input type="checkbox" id="opcoes-menu" class="header_lista_botao">
+            <label for="opcoes-menu">
+                <li class="header_items">Categorias</li>
+            </label>
+
+            <ul class="lista_menu">
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">PROGRAMAÇÃO</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">FRONT-END</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">INFRAESTRUTURA</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">BUSINESS</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">DESIGN & UX</a>
+                </li>
+            </ul>
+
+            <li class="header_items"><a href="#" class="items_links">Favoritos</a></li>
+            <li class="header_items"><a href="#" class="items_links">Minha instante</a></li>
+        </ul>
+
         <div class="cabecalho_container">
-            <a href="#"><img src="Assets/Favoritos.svg" alt="Favoritos" class="cabecalho_imagem"></a>
+            <a href="#"><img src="Assets/Favoritos.svg" alt="Favoritos" class="cabecalho_imagem cabecalho_imagem_transparente"></a>
             <a href="#"><img src="Assets/Compras.svg" alt="Sacola de Compras" class="cabecalho_imagem"></a>
             <a href="#"><img src="Assets/Usuário.svg" alt="Ícone de usuário" class="cabecalho_imagem"></a>
         </div>
@@ -184,8 +213,10 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
-        <p class="contato_texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato_container">
+            <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
+            <p class="contato_texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" class="contato_email" placeholder="Cadastre seu e-mail">
     </section>
 
@@ -201,11 +232,20 @@
         const swiper = new Swiper('.swiper', {
         spaceBetween: 10,
         slidesPerView: 3,
+
         pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
             },
-        });
+
+        breakpoints: {
+        // when window width is >= 320px
+        1024: {
+        slidesPerView: 3,
+        spaceBetween: 60,
+        },
+        },
+    })
     </script>
 
 </body>
