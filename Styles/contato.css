@@ -24,7 +24,7 @@
 }
 
 .contato_email{
-    padding: 1em 1em 1em 3em;
+    padding: 1em;
     border: 1px solid var(--cor-azul);
     border-radius: 1.5em;
     width: 85%;
@@ -35,6 +35,7 @@
     font-weight: 400;
     font-size: 1em;
     color: var(--cor-azul);
+    text-align: center;
     background: url("../Assets/Email.svg") no-repeat;
     background-position: 1em;
 }
