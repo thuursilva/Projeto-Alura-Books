@@ -12,3 +12,61 @@ hr{
     font-weight: 400;
     font-size: 1em;
 }
+
+.lista_rodape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista_rodape{
+        display: block;
+    }
+
+    .lista_rodape_titulo{
+        font-family: var(--fonte-poppins);
+        font-size: 0.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--cor-cinza-padrao);
+        margin-bottom: 1em;
+    }
+
+    .rodape_titulo{
+        font-size: 1.5rem;
+    }
+
+    .rodape_item{
+        display: flex;
+        align-items: center;
+        margin: 0.5em 0;
+    }
+
+    .rodape_links{
+        text-decoration: none;
+        font-family: var(--fonte-poppins);
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: var(--cor-cinza-escuro);
+        margin-left: 0.5em;
+    }
+
+    .rodape_links:hover{
+        color: var(--cor-cinza-padrao);
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .lista_rodape{
+        border-left: 1px solid var(--cor-cinza-padrao);
+        padding-left: 1em;
+    }
+
+    .rodape{
+        padding: 3em 0;
+    }
+}

@@ -16,6 +16,8 @@
     --cor-azul: #002F52;
     --fonte-josefin:'Josefin Sans', sans-serif;
     --cor-preto: #000;
+    --cor-cinza-padrao:#858585;
+    --cor-cinza-escuro: #474646;
 }
 
 body{
